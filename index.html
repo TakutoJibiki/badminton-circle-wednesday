@@ -10,12 +10,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle_menu.css">
 </head>
 
 <body id="a-body">
     <header class="white">
         <a href="#a-body" class="plane-link">
-            <div id="flex">
+            <div class="flex">
                 <div id="subtitle">
                     若者向け<br>バドミントン
                 </div>
@@ -25,7 +26,7 @@
                 <img src="img/shuttle.png" alt="シャトル" class="icon">
             </div>
         </a>
-        <div id="flex">
+        <div class="flex">
             <a href="https://www.net-menber.com/look/data/131504.html" target="_blank" rel="noopener noreferrer"
                 class="plane-link">
                 <div id="application">
@@ -35,6 +36,23 @@
             <img src="img/instagram.png" alt="インスタグラム" class="icon">
         </div>
     </header>
+
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+        <div id="g-nav-list">
+            <ul>
+                <li><a href="https://www.net-menber.com/look/data/131504.html" target="_blank" rel="noopener noreferrer"
+                        class="plane-link">申し込み</a></li>
+                <hr>
+                <li><a href="#a-about-circle">サークル概要</a></li>
+                <li><a href="#a-activity-info">活動情報</a></li>
+                <li><a href="#a-application">メンバー募集</a></li>
+                <li><a href="#a-FAQ">FAQ</a></li>
+                <hr>
+                <img src="img/instagram_full.png" alt="インスタグラム" style="height: 30px;">
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <section style="position: relative;">
@@ -48,27 +66,33 @@
         <nav class="white" id="a-nav">
             <div class="content" id="table-of-contents">
                 <div class="box">
-                    <h2>サークル概要</h2>
-                    <p>馴染みやすいサークルを目標に毎回楽しく活動しています</p>
+                    <div>
+                        <h2>サークル概要</h2>
+                        <p>馴染みやすいサークルを目標に毎回楽しく活動しています</p>
+                    </div>
+                    <button type="button" href="#a-about-circle">詳細</button>
                 </div>
                 <div class="box">
-                    <h2>活動情報</h2>
-                    <p>毎週水曜に札幌市内の体育館で活動しています</p>
+                    <div>
+                        <h2>活動情報</h2>
+                        <p>毎週水曜に札幌市内の体育館で活動しています</p>
+                    </div>
+                    <button type="button" href="#a-activity-info">詳細</button>
                 </div>
                 <div class="box">
-                    <h2>メンバー募集</h2>
-                    <p>男女問わず初心者から中級者まで募集しています</p>
+                    <div>
+                        <h2>メンバー募集</h2>
+                        <p>男女問わず初心者から中級者まで募集しています</p>
+                    </div>
+                    <button type="button" href="#a-application">詳細</button>
                 </div>
-                <button type="button" href="#a-about-circle">詳細</button>
-                <button type="button" href="#a-activity-info">詳細</button>
-                <button type="button" href="#a-application">詳細</button>
                 <div class="box">
-                    <h2>FAQ</h2>
-                    <p>よくある質問をまとめました</p>
+                    <div>
+                        <h2>FAQ</h2>
+                        <p>よくある質問をまとめました</p>
+                    </div>
+                    <button type="button" href="#a-FAQ">詳細</button>
                 </div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <button type="button" href="#a-FAQ">詳細</button>
             </div>
         </nav>
 
@@ -324,6 +348,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scroll.js"></script>
+    <script src="toggle_menu.js"></script>
 </body>
 
 </html>
