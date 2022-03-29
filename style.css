@@ -313,4 +313,8 @@ a.plane-link{
     }
     th,td{ display: block; }
     th{ margin-bottom: 10px; }
+    #to-top{
+        right: 10px;
+        bottom: 10px;
+    }
 }
