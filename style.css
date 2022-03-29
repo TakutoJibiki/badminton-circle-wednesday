@@ -281,7 +281,7 @@ a.plane-link{
 *
 -----------------------------------------------*/
 .openbtn{ display: none; }
-@media (max-width: 710px){
+/* @media (max-width: 710px){
     #subtitle{ display: none; }
     #application{ display: none; }
     .flex img[alt="インスタグラム"]{ display: none; }
@@ -315,4 +315,4 @@ a.plane-link{
     }
     th,td{ display: block; }
     th{ margin-bottom: 10px; }
-}
+} */
